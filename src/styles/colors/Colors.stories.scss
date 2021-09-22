@@ -1,0 +1,19 @@
+.color-story {
+  .row {
+    margin: 25px 0;
+    align-items: center;
+    justify-content: center;
+
+    .color-dot {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      font-family: Courier, typewriter, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}

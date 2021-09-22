@@ -1,0 +1,38 @@
+$en: "en";
+$enUS: "en-US";
+$enGB: "en-GB";
+
+$es: "es";
+$esUS: "es-US";
+$esMX: "es-MX";
+
+$fr: "fr";
+$frFR: "fr-FR";
+
+$englishLocaleCodes: $en, $enUS, $enGB;
+$spanishLocaleCodes: $es, $esUS, $esMX;
+$frenchLocaleCodes: $fr, $frFR;
+
+@function english() {
+  $cssClasses: ();
+  @each $locale in $englishLocaleCodes {
+    $cssClasses: append($cssClasses, ".#{$locale}");
+  }
+  @return $cssClasses;
+}
+
+@function spanish() {
+  $cssClasses: ();
+  @each $locale in $spanishLocaleCodes {
+    $cssClasses: append($cssClasses, ".#{$locale}");
+  }
+  @return $cssClasses;
+}
+
+@function french() {
+  $cssClasses: ();
+  @each $locale in $frenchLocaleCodes {
+    $cssClasses: append($cssClasses, ".#{$locale}");
+  }
+  @return $cssClasses;
+}

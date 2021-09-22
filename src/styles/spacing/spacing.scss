@@ -1,0 +1,76 @@
+:root {
+  /* set base spacing values */
+  --spacing-baseline: 1rem;
+
+  /* text body margin scale */
+  --spacing-xxs: calc(var(--spacing-baseline) / 4);
+  --spacing-xs: calc(var(--spacing-baseline) / 2);
+  --spacing-sm: var(--spacing-baseline);
+  --spacing-md: calc(var(--spacing-baseline) * 1.5);
+  --spacing-lg: calc(var(--spacing-baseline) * 2);
+  --spacing-xl: calc(var(--spacing-baseline) * 3);
+  --spacing-xxl: calc(var(--spacing-baseline) * 4);
+
+  //TODO: spacing convention. These numbers should be swapped based on design feedback
+  --spacing-0: 0;
+  --spacing-5: calc(var(--spacing-baseline) * 0.325);
+  --spacing-10: calc(var(--spacing-baseline) * 0.625);
+  --spacing-15: calc(var(--spacing-baseline) * 0.9375);
+  --spacing-20: calc(var(--spacing-baseline) * 1.25);
+  --spacing-25: calc(var(--spacing-baseline) * 1.5625);
+  --spacing-30: calc(var(--spacing-baseline) * 1.875);
+  --spacing-40: calc(var(--spacing-baseline) * 2.375);
+  --spacing-50: calc(var(--spacing-baseline) * 3.25);
+}
+
+.spacing--xs {
+  margin-bottom: var(--spacing-xs);
+}
+
+.spacing--sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.spacing--md {
+  margin-bottom: var(--spacing-md);
+}
+
+.spacing--lg {
+  margin-bottom: var(--spacing-lg);
+}
+
+.spacing--xl {
+  margin-bottom: var(--spacing-xl);
+}
+
+.spacing--xxl {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.spacing--top--xs {
+  margin-top: var(--spacing-xs);
+}
+
+.spacing--top--sm {
+  margin-top: var(--spacing-sm);
+}
+
+.spacing--top--md {
+  margin-top: var(--spacing-md);
+}
+
+.spacing--top--lg {
+  margin-top: var(--spacing-lg);
+}
+
+.spacing--top--xl {
+  margin-top: var(--spacing-xl);
+}
+
+.spacing--top--xxl {
+  margin-top: var(--spacing-xxl);
+}
+
+blockquote {
+  padding-left: var(--spacing-md);
+}

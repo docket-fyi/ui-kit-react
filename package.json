@@ -1,0 +1,174 @@
+{
+  "name": "@docket/ui-kit-react",
+  "version": "1.0.0",
+  "description": "Docket React UI kit",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.production.js",
+    "format": "npm run prettier -- --write",
+    "lint": "eslint --ext js,jsx,ts,tsx src",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier \"**/*.{js,jsx,ts,tsx,css,json,scss,sass}\"",
+    "test": "jest",
+    "validate": "npm run prettier -- --list-different && npm run lint",
+    "start": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,css,scss}": [
+      "npm run format",
+      "npm run lint:fix"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jest": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react-hooks/recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "import",
+      "react",
+      "eslint-plugin-prettier"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "arrow-body-style": [
+        "error",
+        "as-needed"
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            "tsx"
+          ]
+        }
+      ],
+      "no-unused-expressions": 2,
+      "max-len": 0,
+      "import/no-extraneous-dependencies": 0,
+      "react/destructuring-assignment": 0,
+      "react/prop-types": 0,
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ]
+    },
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.test.js"
+        ],
+        "rules": {
+          "no-unused-expressions": "off"
+        }
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/docket-fyi/ui-kit-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/docket-fyi/ui-kit-react",
+  "dependencies": {
+    "bootstrap": "4.6.0",
+    "classnames": "2.2.6",
+    "react": "17.0.1",
+    "react-bootstrap": "1.4.3",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/plugin-transform-runtime": "7.12.15",
+    "@babel/preset-env": "7.12.13",
+    "@babel/preset-react": "7.12.13",
+    "@babel/preset-typescript": "7.12.13",
+    "@babel/runtime": "7.12.13",
+    "@storybook/addon-actions": "6.1.17",
+    "@storybook/addon-backgrounds": "6.1.17",
+    "@storybook/addon-docs": "6.1.17",
+    "@storybook/addon-essentials": "6.1.17",
+    "@storybook/addon-links": "6.1.17",
+    "@storybook/addon-storysource": "6.1.17",
+    "@storybook/addon-viewport": "6.1.17",
+    "@storybook/addons": "6.1.17",
+    "@storybook/preset-typescript": "3.0.0",
+    "@storybook/react": "6.1.17",
+    "@storybook/source-loader": "6.1.17",
+    "@testing-library/jest-dom": "5.11.9",
+    "@testing-library/react": "11.2.5",
+    "@types/marked": "1.2.2",
+    "@types/react": "17.0.1",
+    "@types/react-dom": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.14.2",
+    "@typescript-eslint/parser": "4.14.2",
+    "babel-loader": "8.2.2",
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "7.0.0",
+    "core-js": "3.8.3",
+    "css-loader": "5.0.1",
+    "dotenv": "8.2.0",
+    "dotenv-webpack": "6.0.0",
+    "eslint": "7.19.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.1.3",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "file-loader": "6.2.0",
+    "html-loader": "1.3.2",
+    "html-webpack-plugin": "5.0.0",
+    "husky": "4.3.8",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.6.3",
+    "lint-staged": "10.5.4",
+    "loader-utils": "2.0.0",
+    "node-sass": "5.0.0",
+    "prettier": "2.2.1",
+    "prop-types": "15.7.2",
+    "sass-loader": "10.1.1",
+    "style-loader": "2.0.0",
+    "typescript": "4.1.3",
+    "url-loader": "4.1.1",
+    "webpack": "5.21.1",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "3.11.2",
+    "webpack-merge": "5.7.3"
+  }
+}

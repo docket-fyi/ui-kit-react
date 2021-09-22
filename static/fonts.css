@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "CircularStdBook";
+  font-style: normal;
+  font-weight: bold;
+  src: local("CircularStd Book"), local("CircularStd-Book"),
+    local("CircularStdBook"),
+    url("fonts/CircularStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CircularStdBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd Bold"), local("CircularStd-Bold"),
+    local("CircularStdBold"),
+    url("fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CircularStdMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd Medium"), local("CircularStd-Medium"),
+    local("CircularStdMedium"),
+    url("fonts/CircularStd-Medium.otf") format("opentype");
+}
+
+/* @font-face { */
+/* font-family: 'CircularStdBook'; */
+/* font-weight: normal; */
+/* font-style: normal; */
+/* font-stretch: normal; */
+/* src: local('CircularStd Book'), local('CircularStd-Book'), local('CircularStdBook'), */
+/* url('fonts/CircularStd-Book.otf') format('opentype'); */
+/* } */
+
+/* @font-face { */
+/* font-family: 'CircularStdMedium'; */
+/* font-weight: 500; */
+/* font-style: normal; */
+/* font-stretch: normal; */
+/* src: local('CircularStd Medium'), local('CircularStd-Medium'), local('CircularStdMedium'), */
+/* url('fonts/CircularStd-Medium.otf') format('opentype'); */
+/* } */
+
+/* @font-face { */
+/* font-family: 'CircularStdBold'; */
+/* font-weight: bold; */
+/* font-style: normal; */
+/* font-stretch: normal; */
+/* src: local('CircularStd Bold'), local('CircularStd-Bold'), local('CircularStdBold'), */
+/* url('fonts/CircularStd-Bold.otf') format('opentype'); */
+/* } */

@@ -1,0 +1,28 @@
+.mlf-btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: var(--spacing-15) var(--spacing-30);
+  border-radius: 100px;
+
+  &.primary {
+    background-image: var(--color-gradient);
+  }
+
+  &.disabled,
+  &.primary.disabled {
+    background-image: none;
+    background-color: var(--color-light-grey);
+    color: var(--color-grey);
+  }
+
+  &.text {
+    background-image: none;
+    background-color: var(--color-white);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
